@@ -26,10 +26,10 @@ describe("digitsEnd", () => {
       expect(lib.digitsEnd("38748141810")).to.be.equal("10");
     });
   });
-// descobrir erro
+
 describe("cpfCheck", () => {
   it("valid", function(){
-    expect(lib.cpfCheck("38748141810")).to.be.equal([ "3", "8", "7", "4", "8", "1", "4", "1", "8" ]);
+    expect(lib.cpfCheck("38748141810")).to.be.eql([ "3", "8", "7", "4", "8", "1", "4", "1", "8" ]);
   });
 });
 
