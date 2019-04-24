@@ -1,26 +1,56 @@
-let lib = require('../lib/index')
-let expect = require('chai').expect
+let lib = require("../lib/index");
+let expect = require("chai").expect;
 
-describe('add', function() {
-    it('sum to numbers', function() {
-        expect(lib.add(6, 6)).to.be.equal(12);
-    })
-    it('sum to zero', function() {
-        expect(lib.add(10, 6)).to.be.equal(16);
-    })
-    it('sum to five', function() {
-        expect(lib.add(5, 6)).to.be.equal(10);
-    })
-})
+describe("cpfValidate", () => {
+  it("valid", function(){
+    expect(lib.cpfValidate("38748141810")).to.be.equal(true);
+  });
+  it("invalid", () => {
+    expect(lib.cpfValidate("11111111111")).to.be.equal(false);
+  });
+  it("invalid", () => {
+    expect(lib.cpfValidate("27727282822")).to.be.equal(false);
+  });
+  it("invalid", () => {
+    expect(lib.cpfValidate("aaaaaaaaaaa")).to.be.equal(false);
+  });
+});
 
-describe('sub', function() {
-    it('sub to numbers', function() {
-        expect(lib.sub(6, 6)).to.be.equal(0);
-    })
-    it('sub to zero', function() {
-        expect(lib.sub(10, 6)).to.be.equal(4);
-    })
-    it('sub to five', function() {
-        expect(lib.sub(5, 6)).to.be.equal(12);
-    })
-})
+describe("digitsEnd", () => {
+  it("valid", function(){
+    expect(lib.digitsEnd("38748141810")).to.be.equal("10");
+  });
+});
+describe("digitsEnd", () => {
+    it("valid", function(){
+      expect(lib.digitsEnd("38748141810")).to.be.equal("10");
+    });
+  });
+// descobrir erro
+describe("cpfCheck", () => {
+  it("valid", function(){
+    expect(lib.cpfCheck("38748141810")).to.be.equal([ "3", "8", "7", "4", "8", "1", "4", "1", "8" ]);
+  });
+});
+
+describe("divisionRest", () => {
+  it("valid", function(){
+    expect(lib.divisionRest(10)).to.be.equal(10);
+  });
+});
+
+describe("testDigit", () => {
+  it("valid", function(){
+    expect(lib.testDigit(11)).to.be.equal(0);
+  });
+  it("valid", function(){
+    expect(lib.testDigit(8)).to.be.equal(3);
+  });
+});
+
+describe("sumTotal", () => {
+  it("valid", function(){
+    expect(lib.sumTotal([ "3", "8", "7", "4", "8", "1", "4", "1", "8" ], 10)).to.be.equal(274);
+  });
+});
+
