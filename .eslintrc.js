@@ -12,7 +12,7 @@ module.exports = {
     "keyword-spacing": ["error", { "before": true }],
     "space-infix-ops": ["error", { "int32Hint": false }],
     "comma-spacing": ["error", { before: false, after: true }],
-    "space-before-blocks": ["error", "never"],
+    "space-before-blocks": ["error", "always"],
     "spaced-comment": ["error", "always", { "exceptions": ["-", "+"] }],
     "key-spacing": ["error", { "afterColon": true }],
     "no-multi-spaces": ["error", { "ignoreEOLComments": true }],

@@ -1,22 +1,31 @@
 {
-    "name": "lib-cpfvalidator",
-    "version": "1.0.0",
-    "main": "index.js",
-    "directories": {
-        "lib": "lib",
-        "test": "test"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "chai": "^4.2.0",
-        "mocha": "^6.1.4"
-    },
-    "devDependencies": {
-        "eslint": "^5.16.0"
-    },
-    "description": ""
+  "name": "lib-cpfvalidator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariana Primante Costa",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "description": "Esta biblioteca se destina à validação de números de CPF para uso em aplicações web",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianaPrimante/lib-cpfvalidator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarianaPrimante/lib-cpfvalidator/issues"
+  },
+  "homepage": "https://github.com/MarianaPrimante/lib-cpfvalidator#readme"
 }
