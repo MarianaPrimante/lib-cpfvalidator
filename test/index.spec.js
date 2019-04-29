@@ -1,30 +1,30 @@
 const lib = require("../lib/index");
 const expect = require("chai").expect;
 
-describe("cpfValidate", () => {
+describe("cpfValidator", () => {
   it("valid", () => {
-    expect(lib.cpfValidate("38748141810")).to.be.equal(true);
+    expect(lib.cpfValidator("38748141810")).to.be.equal(true);
   });
   it("valid", () => {
-    expect(lib.cpfValidate("40090279832")).to.be.equal(true);
+    expect(lib.cpfValidator("40090279832")).to.be.equal(true);
   });
   it("invalid", () => {
-    expect(lib.cpfValidate("11111111111")).to.be.equal(false);
+    expect(lib.cpfValidator("11111111111")).to.be.equal(false);
   });
   it("invalid", () => {
-    expect(lib.cpfValidate("88888888888")).to.be.equal(false);
+    expect(lib.cpfValidator("88888888888")).to.be.equal(false);
   });
   it("invalid", () => {
-    expect(lib.cpfValidate("27727282822")).to.be.equal(false);
+    expect(lib.cpfValidator("27727282822")).to.be.equal(false);
   });
   it("invalid", () => {
-    expect(lib.cpfValidate("aaaaaaaaaaa")).to.be.equal(false);
+    expect(lib.cpfValidator("aaaaaaaaaaa")).to.be.equal(false);
   });
   it("invalid", () => {
-    expect(lib.cpfValidate("||\\$$$57&")).to.be.equal(false);
+    expect(lib.cpfValidator("||\\$$$57&")).to.be.equal(false);
   });
   it("invalid", () => {
-    expect(lib.cpfValidate("a5676a6a7")).to.be.equal(false);
+    expect(lib.cpfValidator("a5676a6a7")).to.be.equal(false);
   });
 });
 
