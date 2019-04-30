@@ -1,27 +1,23 @@
 {
-  "name": "libcpfvalidatormp",
+  "name": "lib-cpfvalidator",
   "version": "1.0.1",
   "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
   "scripts": {
-    "test": "mocha"
+    "eslint": "eslint index.js",
+    "format": "prettier",
+    "test": "nyc mocha"
   },
   "author": "Mariana Primante Costa",
   "license": "ISC",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4",
-    "nyc": "^14.0.0"
-  },
   "keywords": [
     "CPF",
     "validator"
   ],
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^5.16.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
   },
   "description": "Esta biblioteca se destina à validação de números de CPF para uso em aplicações web",
   "repository": {
