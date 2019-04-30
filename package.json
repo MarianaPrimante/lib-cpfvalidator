@@ -1,5 +1,5 @@
 {
-  "name": "lib-cpfvalidator",
+  "name": "libcpfvalidatormp",
   "version": "1.0.1",
   "main": "index.js",
   "directories": {
