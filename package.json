@@ -16,6 +16,10 @@
     "mocha": "^6.1.4",
     "nyc": "^14.0.0"
   },
+  "keywords": [
+    "CPF",
+    "validator"
+  ],
   "devDependencies": {
     "eslint": "^5.16.0"
   },

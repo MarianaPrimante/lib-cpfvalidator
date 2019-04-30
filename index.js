@@ -27,4 +27,4 @@ const cpfValidator = (cpfTotal) => {
   return Object.is(digitsEnd(cpfTotal), digitsEndTest(firstDigit, secondDigit));
 }; 
 
-module.exports = cpfValidator;
+module.exports.cpfValidator = cpfValidator;

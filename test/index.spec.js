@@ -1,5 +1,5 @@
-const lib = require("../lib/index");
 const expect = require("chai").expect;
+const lib = require("../index");
 
 describe("cpfValidator", () => {
   it("valid : '38748141810'", () => {
