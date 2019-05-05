@@ -11,6 +11,9 @@ describe("cpfValidator", () => {
   it("valid: '40090279832'", () => {
     expect(lib.cpfValidator("40090279832")).to.be.equal(true);
   });
+  it("invalid : '111111111111'", () => {
+    expect(lib.cpfValidator("1111111111111")).to.be.equal(false);
+  });
   it("invalid: '1111111111'", () => {
     expect(lib.cpfValidator("11111111111")).to.be.equal(false);
   });

@@ -18,7 +18,7 @@ const cpfValidator = (cpfTotal) => {
     cpfString === "22222222222" || cpfString === "33333333333" || 
     cpfString === "44444444444" || cpfString === "55555555555" || 
     cpfString === "66666666666" || cpfString === "77777777777" || 
-    cpfString === "88888888888" || cpfString === "99999999999") {
+    cpfString === "88888888888" || cpfString === "99999999999" || cpfString.length > 11) {
     return false;
   }
   const cpf = cpfCheck(cpfTotal);
